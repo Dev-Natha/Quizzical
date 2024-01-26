@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home-cont {
+  background-color: rgb(242, 246, 250);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+.top-cont, .btm-cont{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+.top-cont{
+  background-color: rgb(254, 249, 202);
+  top: -80px;
+  right: -90px;
+}
+.btm-cont{
+  background-color: rgb(216, 231, 248);
+  bottom: -80px;
+  left: -90px;
+}
+.home-items-cont{
+  text-align: center;
+}
+.home-btn{
+  padding: 15px 45px;
+  border-radius: 10px;
+  background-color: rgb(66, 79, 142);
   color: white;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
+.home-btn:hover{
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz-cont{
+  width: 60%;
+  color: rgb(4, 0, 64);
+}
+.options-cont{
+  display: flex;
+  gap: 20px;
+}
+.options-cont button{
+  background: none;
+  border: 1px solid rgb(10, 0, 68);
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: rgb(4, 0, 64);
+}
+.options-cont button:hover{
+  cursor: pointer;
+}
+.ans-btn{
+  text-align: center;
+  margin-top: 40px;
 }
